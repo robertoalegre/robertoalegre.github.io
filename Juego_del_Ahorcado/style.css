@@ -1,0 +1,104 @@
+body {
+background-color: #ffcf7b;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+
+.titulo{
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #00a57f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+#hombre {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+}
+
+.hombre-ahorcado {
+  width: 100vw;
+  text-align: center;
+  margin-top:  4rem;
+  margin-bottom: 2rem;
+  height: 16.75rem;
+}
+
+.adivinado {
+  text-align: center;
+  color: #002462;
+  font-size: 1.8rem;
+}
+
+.letra {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.adivinada {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-bottom: solid 1px #002462;
+  margin-left: 0.4rem;
+  line-height: 4.5rem;
+}
+
+.errado {
+  text-align:  center;
+  margin-top: 1rem;
+  color: #242d34;
+}
+
+.errada {
+  margin-left: 1rem;
+}
+
+[type="button"] {
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid 1px #0a3871;
+  color: #0a3871;
+  background: inherit;
+  cursor: pointer;
+}
+
+.btn-verde {
+  background-color:#00a57f;
+  color: #fff;
+  border-color: #000;
+  font-size: 1.136rem;
+}
+
+.btn-verde:hover{
+  background-color:#90cd6a;
+  transition: 1s;
+}
+
+.btn-desistir{
+  font-size: 1.136rem;
+}
+
+.btn-desistir:hover{
+  background-color: #f02f50;
+  transition: 1s;
+  color: #fff;
+}
+.botones {
+  text-align: center;
+  margin-top: 3rem;
+  
+}

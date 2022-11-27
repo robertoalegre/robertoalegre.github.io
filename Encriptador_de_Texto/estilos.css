@@ -1,0 +1,138 @@
+header{
+    padding: 50px 100px;
+}
+
+.titulo{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    margin: 0 15%; 
+}
+h1{
+    font-size: 30px;
+    margin: 1em 15%;
+}
+p{
+    font-size: 20px;
+    margin: 1em 15%; 
+}
+
+body{
+    background: #F3F5FC;
+    font-family: 'Roboto Mono', monospace;
+    }
+
+/*Contenedor*/
+.container{
+    width: 1200px;
+    height: 400px;
+    background-color: white;
+    padding: 10px 2px 10px 2px;
+    margin: 30px;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 30px 20px;
+}
+
+/* Caja 1*/
+.principal{
+    background: rgb(212, 212, 219);
+    box-sizing: border-box;
+    margin-left: 30px;
+    border:0.5px rgb(71, 70, 70); 
+    border-radius: 15px;                            
+}
+
+.input-texto{
+    width: 350px;
+    height: 300px;
+    border: 0.5px rgb(71, 70, 70); 
+    border-radius: 15px;
+    font-size: 20px;
+    resize: none; 
+ }
+
+ /* Caja 2*/
+
+.muñeco{
+    margin: 0 1.5%;
+    background-color: white;
+}
+
+/* caja 3*/
+.resultado{
+   
+    background: rgb(212, 212, 219);
+    border: 0.5px rgb(71, 70, 70); 
+    border-radius: 15px;
+}
+.mensaje{
+    width: 350px;
+    height: 300px;
+    border: 0.5px rgb(71, 70, 70); 
+    border-radius: 15px;
+    font-size: 20px;
+    resize: none;
+}
+::placeholder{
+    color: #0A3871;;
+}
+
+/*Botones*/
+.encriptar{
+    margin: 0 50px;
+    height: 50px;
+    background: #0A3871;
+    color: white;
+    font-size: 15px;
+    border: 0.5px solid rgb(71, 70, 70);
+    border-radius: 150px;
+}
+
+.encriptar:hover{
+    transform: scale(1.2); 
+    background: rgb(218, 218, 224);
+    color:black;
+}
+
+.desencriptar{
+    height: 50px;
+    background-color: rgb(218, 218, 224);
+    color: black;
+    font-size: 15px;
+    border: 0.5px solid rgb(71, 70, 70);
+    border-radius: 150px;
+}
+.desencriptar:hover{
+    background: #0A3871;
+    color: white;
+    transform: scale(1.2); 
+}
+
+.copiar{
+    margin: 0 40%;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(218, 218, 224);
+    color: black;
+    font-size: 15px;
+    border: 0.5px solid rgb(71, 70, 70); 
+    border-radius: 150px;
+}
+
+.copiar:hover{
+    background: #0A3871;
+    color: white;
+    transform: scale(1.2); 
+}
+
+footer{
+    height: 40px;
+    width: 1200px;
+    margin: 30px;
+    color:rgb(71, 70, 70);
+    text-align: center;
+    font-size: 20px;
+    border: solid 0.5px #0A3871;
+    border-radius: 5px;
+}

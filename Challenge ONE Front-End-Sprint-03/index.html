@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bases.css">
+    <link rel="stylesheet" href="./css/componentes/encabezado.css">
+    <link rel="stylesheet" href="./css//componentes/tarjetas.css">
+    <link rel="stylesheet" href="./css/componentes/banner.css">
+    <link rel="stylesheet" href="./css/componentes/contacto.css">
+    <link rel="stylesheet" href="./css/componentes/formulario.css">
+    <link rel="stylesheet" href="./css/componentes/footer.css">
+    <title>Alura Geek</title>
+</head>
+<body>
+    <section class="encabezado container">
+        <img src="./imagenes/Logo.png" alt="Logo Alura">
+        <input class="encabezado__busqueda ocultar" type="text" placeholder="¿Qué deseas buscar?" maxlength="50">
+        <button class="encabezado__boton" id="login">Login</button>
+        <button class="encabezado__lupa"></button>
+    </section>
+
+    <section class="banner">
+        <div class="banner__imagen">
+            <div class="banner__promocion">
+                <h1>Diciembre Promocional</h1>
+                <h3>Productos seleccionados con 33% de descuento</h3>
+                <a href="#consolas"></a><button>Ver consolas</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="consolas" class="categorias">
+        <!-- <div class="container">
+            <div class="titulo">
+                <h2>Star Wars</h2>
+                <button class="tema__btn">Ver todo<img class="titulo__flecha" src="./imagenes/flecha.png" alt=""></button>
+            </div>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <img src="./imagenes/imagen1.png" alt="">
+                    <h4>Producto XYZ</h4>
+                    <h4>$60,00</h4>
+                    <a href="#">Ver Producto</a>
+                </div>
+                
+            </div>
+        </div> -->
+        
+    </section>
+
+    <section class="contacto container">
+        <div class="contacto__logo-menu">
+            <img src="./imagenes/Logo.png" alt="Logo Alura">
+            <ul class="contacto__menu">
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Programa de fidelidad</a></li>
+                <li><a href="#">Nuestras Tiendas</a></li>
+                <li><a href="#">Quiero ser franquiciado</a></li>
+                <li><a href="#">Anúncie aquí</a></li>
+            </ul>
+        </div>
+        <form class="formulario" action="">
+            <label class="formulario__titulo" for="">Hable con nosotros</label>
+            <div class="formulario__campos">
+                <input class="formulario__entrada" type="text" id="nombre" placeholder="Nombre" required data-tipo="nombre">
+                <label class="formulario__etiqueta" for="nombre">Nombre</label>
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formulario__campos--mensaje">
+                <textarea class="formulario__entrada" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required data-tipo="mensaje"></textarea>
+                <label class="formulario__etiqueta--mensaje" for="mensaje">Mensaje</label>
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <input class="formulario__enviar" type="submit" value="Enviar Mensaje">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <h3 class="footer__titulo">Desarrollado por <a href="https://www.linkedin.com/in/roberto-alegre96/"  target="_blank" rel="noopener">Roberto Alegre</a><br>&#169 2022</h3>
+    </footer>
+
+    <script  type="module" src="./js/index.js"></script>
+    
+</body>
+</html>

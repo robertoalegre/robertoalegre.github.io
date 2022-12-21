@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bases.css">
+    <link rel="stylesheet" href="./css/componentes/encabezado.css">
+    <link rel="stylesheet" href="./css/componentes/producto.css">
+    <link rel="stylesheet" href="./css/componentes/formulario.css">
+    <link rel="stylesheet" href="./css/componentes/contacto.css">
+    <link rel="stylesheet" href="./css/componentes/footer.css">
+    <title>E-commerce</title>
+</head>
+<body>
+    <section class="encabezado container">
+        <img src="./imagenes/Logo.png" alt="Logo Alura">
+        <input class="encabezado__busqueda ocultar" type="text" placeholder="¿Qué deseas buscar?" maxlength="50">
+        <button class="encabezado__boton" id="botonMenuAdmin">Menú Administrador</button>
+        <button class="encabezado__lupa"></button>
+    </section>
+
+    <section class="producto container">
+        <form class="formulario" action="./productos.html">
+            <label class="formulario__titulo" for="">Agregar Producto</label>
+            <div class="formulario__campos">
+                <input class="formulario__entrada" type="text" id="imagen" placeholder="URL de imagen" required data-tipo="urlImagen">
+                <label class="formulario__etiqueta" for="imagen">URL de imagen</label>
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formulario__campos">
+                <input class="formulario__entrada" type="text" id="categoria" placeholder="Categoria" required data-tipo="categoria">
+                <label class="formulario__etiqueta" for="categoria">Categoria</label>
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formulario__campos">
+                <input class="formulario__entrada" type="text" id="nombre" placeholder="Nombre del producto" required data-tipo="nombre">
+                <label class="formulario__etiqueta" for="nombre">Nombre del Producto</label>
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formulario__campos">
+                <input class="formulario__entrada" type="text" id="precio" placeholder="Precio del producto" pattern="^[1-9]\d*(\.\d{2})$" required data-tipo="precio">
+                <label class="formulario__etiqueta" for="precio">Precio del producto</label>
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formulario__campos--mensaje">
+                <textarea class="formulario__entrada" id="descripcion" cols="30" rows="10" placeholder="Descripción del producto" required data-tipo="mensaje"></textarea>
+                <label class="formulario__etiqueta--mensaje" for="descripcion">Descripción del Producto</label>
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <input class="formulario__enviar producto__enviar" type="submit" value="Agregar producto">
+        </form>
+    </section>
+
+    <section class="contacto container">
+        <div class="contacto__logo-menu">
+            <img src="./imagenes/Logo.png" alt="Logo Alura">
+            <ul class="contacto__menu">
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Programa de fidelidad</a></li>
+                <li><a href="#">Nuestras Tiendas</a></li>
+                <li><a href="#">Quiero ser franquiciado</a></li>
+                <li><a href="#">Anúncie aquí</a></li>
+            </ul>
+        </div>
+        <form class="formulario contacto__formulario" action="">
+            <label class="formulario__titulo" for="">Hable con nosotros</label>
+            <div class="formulario__campos">
+                <input class="formulario__entrada" type="text" id="nombre" placeholder="Nombre" required data-tipo="nombre">
+                <label class="formulario__etiqueta" for="nombre">Nombre</label>
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <div class="formulario__campos--mensaje">
+                <textarea class="formulario__entrada" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required data-tipo="mensaje"></textarea>
+                <label class="formulario__etiqueta--mensaje" for="mensaje">Mensaje</label>
+                <span class="input-message-error">Este campo no es valido</span>
+            </div>
+            <input class="formulario__enviar" type="submit" value="Enviar Mensaje">
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <h3 class="footer__titulo">Desarrollado por <a href="https://www.linkedin.com/in/roberto-alegre96/"  target="_blank" rel="noopener">Roberto Alegre</a><br>&#169 2022</h3>
+    </footer>
+
+    <script  type="module" src="./js/agregarProducto.js"></script>
+    
+</body>
+</html>    

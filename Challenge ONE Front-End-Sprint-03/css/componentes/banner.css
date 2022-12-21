@@ -1,0 +1,74 @@
+.banner {
+    position: relative;
+}
+
+.banner__promocion {
+    position: absolute;
+    top: 40%;
+    left: calc(100vw * 0.04);
+}
+
+.banner__promocion h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--blanco);
+}
+
+.banner__promocion h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--blanco);
+    padding: 20px 0;
+}
+
+.banner__promocion button {
+    width: 129px;
+    height: 51px;
+    font-family: inherit;
+    font-weight: 400;
+    background-color: var(--azul);
+    border: none;
+    color: var(--blanco);
+}
+
+.banner__promocion button:hover {
+    cursor: pointer;
+}
+
+.banner__imagen {
+    background-image: url(../../imagenes/banner.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 352px;
+}
+
+@media screen and (max-width: 600px) {
+    .banner__imagen {
+        height: 292px;
+    }
+
+    .banner__promocion {
+        top: 50%
+    }
+
+    .banner__promocion h1 {
+        font-size: 22px;
+    }
+
+    .banner__promocion h3 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner__imagen {
+        height: 192px;
+    }
+
+    .banner__promocion {
+        top: 25%
+    }
+
+}
+

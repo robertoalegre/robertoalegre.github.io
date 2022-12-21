@@ -1,0 +1,147 @@
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 16px;
+}
+
+.titulo h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gris-oscuro);
+}
+
+.titulo .tema__btn {
+    font-size: 16px;
+    color: var(--azul);
+    border: none;
+    background: transparent;
+}
+
+.titulo .tema__btn:hover {
+    cursor: pointer;
+}
+
+.titulo__agregar {
+    width: 163px;
+    height: 51px;
+    font-family: inherit;
+    font-weight: 400;
+    color: var(--blanco);
+    background-color: var(--azul);
+    border-color: var(--azul);
+    border-style: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    transition: 200ms;
+}
+
+.titulo__agregar:hover {
+    cursor: pointer;
+}
+
+.titulo__flecha {
+    margin-left: .7rem;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    width: 15%;
+}
+
+.tarjeta > h4:nth-child(2) {      
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gris-oscuro);
+    line-height: 2rem;
+}
+
+.tarjeta > h4:nth-child(3) {      
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gris-oscuro);
+    line-height: 2rem;
+}
+
+.tarjeta a {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--azul);
+    line-height: 2rem;
+}
+
+.tarjeta:nth-child(6n+1) {
+    margin-left: 0;
+}
+
+.tarjeta:nth-child(6n) {
+    margin-right: 0;
+}
+
+.tarjeta:nth-child(1n+7) {
+    display: none
+}
+
+.mostrar__todo > .tarjeta:nth-child(1n+7) {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .tarjeta {
+        width: 23.5%;
+    }
+
+    .tarjeta:nth-child(4n+1) {
+        margin-left: 0;
+    }
+    
+    .tarjeta:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .tarjeta:nth-child(1n+5) {
+        display: none
+    }
+
+    .mostrar__todo > .tarjeta:nth-child(1n+5) {
+        display: flex;
+    }
+}    
+
+@media screen and (max-width: 600px) {
+    .todos {
+        flex-direction: column;
+        align-items: baseline;
+        padding-top: 30px;
+    }
+
+    .todos h2 {
+        margin-bottom: 20px;
+    }
+
+    .tarjeta {
+        width: 49%;
+    }
+
+    .tarjeta:nth-child(2n+1) {
+        margin-left: 0;
+    }
+    
+    .tarjeta:nth-child(2n) {
+        margin-right: 0;
+    }
+
+}    
+
+
+
+
+

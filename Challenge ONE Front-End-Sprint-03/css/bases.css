@@ -1,0 +1,27 @@
+:root {
+    --blanco: #FFFFFF;
+    --gris-claro: #A2A2A2;
+    --gris-oscuro: #464646;
+    --tiza: #F5F5F5;
+    --azul: #2A7AE4;
+    --azul-claro: #5499f4;
+    --celeste: #EAF2FD;
+    --raleway: 'Raleway', sans-serif;
+    --error: red;   
+}
+
+body {
+    font-family: var(--raleway);
+}
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: var(--tiza);
+}
+
+
+
+
+
+

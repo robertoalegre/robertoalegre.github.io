@@ -1,0 +1,1 @@
+export const categorias = ["star wars", "consolas", "diversos"];
